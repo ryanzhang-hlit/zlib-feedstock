@@ -16,10 +16,10 @@ build:
 
 requirements:
   build:
-    - cmake                 # [win]
-    - {{ compiler('c') }}
-    - {{ stdlib('c') }}
-    - make                  # [unix]
+    #- cmake                 # [win]
+    #- {{ compiler('c') }}
+    #- {{ stdlib('c') }}
+    #- make                  # [unix]
   run:
 
 outputs:
@@ -29,8 +29,8 @@ outputs:
         - {{ pin_subpackage('libzlib', max_pin='x') }}
     requirements:
       build:
-        - {{ compiler('c') }}
-        - {{ stdlib('c') }}
+        #- {{ compiler('c') }}
+        #- {{ stdlib('c') }}
       host:
       run:
       run_constrained:
@@ -55,8 +55,8 @@ outputs:
         - {{ pin_subpackage('libzlib-wapi', max_pin='x') }}
     requirements:
       build:
-        - {{ compiler('c') }}
-        - {{ stdlib('c') }}
+        #- {{ compiler('c') }}
+        #- {{ stdlib('c') }}
       host:
       run:
       run_constrained:
@@ -74,8 +74,8 @@ outputs:
         - {{ pin_subpackage('libzlib', max_pin='x') }}
     requirements:
       build:
-        - {{ compiler('c') }}
-        - {{ stdlib('c') }}
+        #- {{ compiler('c') }}
+        #- {{ stdlib('c') }}
       host:
         - {{ pin_subpackage('libzlib', exact=True) }}
       run:
@@ -117,8 +117,8 @@ outputs:
         - {{ pin_subpackage('libzlib-wapi', max_pin='x') }}
     requirements:
       build:
-        - {{ compiler('c') }}
-        - {{ stdlib('c') }}
+        #- {{ compiler('c') }}
+        #- {{ stdlib('c') }}
       host:
         - {{ pin_subpackage('libzlib-wapi', exact=True) }}
         - {{ pin_subpackage('zlib', exact=True) }}
